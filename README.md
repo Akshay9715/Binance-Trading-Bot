@@ -28,8 +28,10 @@ pip install requests
 
 ### 🚀 Usage
 Market Buy Order (0.001 BTC):
+```
 python basic_bot.py --api-key YOUR_API_KEY --api-secret YOUR_API_SECRET \
   --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+```
 
 Limit Sell Order (0.001 BTC at $30,000):
 ```
@@ -51,16 +53,16 @@ python basic_bot.py --api-key ... --api-secret ... \
 
 📂 Logs
 
-Two log files are created automatically:
+ - Two log files are created automatically:
 
-bot.log — overall activity, INFO & DEBUG messages, errors
+ - bot.log — overall activity, INFO & DEBUG messages, errors
 
-bot_requests.log — details of API requests & responses (no secrets stored)
+ - bot_requests.log — details of API requests & responses (no secrets stored)
 
 📌 Notes
 
-Uses Binance Futures Testnet, so trades are fake and risk-free.
+ - Uses Binance Futures Testnet, so trades are fake and risk-free.
 
-API key/secret must be generated from Binance Futures Testnet.
+ - API key/secret must be generated from Binance Futures Testnet.
 
-Optional enhancements: Stop-Limit, OCO, or UI can be added.
+ - Optional enhancements: Stop-Limit, OCO, or UI can be added.
